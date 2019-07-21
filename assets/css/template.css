@@ -28,7 +28,7 @@ html.modal-w {
 
 body {
     background-color: #fff;
-    font-family: "Open Sans", "Raleway", Arial, serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.8;
     font-weight: 400;
     font-size: 13px;
@@ -277,15 +277,15 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: "Montserrat", Arial, serif;
+    font-family: 'Princess Sofia', cursive;
     line-height: 1.4;
     font-weight: 700;
     color: #202020;
-    text-transform: uppercase;
 }
 
 h1,
 .h1 {
+    font-family: 'Qwigley', cursive;
     letter-spacing: 8px;
     font-size: 32px;
 }
@@ -439,7 +439,7 @@ span{
     border-radius: 0;
     position: relative;
     overflow: hidden;
-    font-family: "Montserrat", Arial, serif;
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
@@ -1313,7 +1313,6 @@ button {
     line-height: 24px;
     font-size: 10px;
     letter-spacing: 2.2px;
-    text-transform: uppercase;
     font-weight: 400;
 }
 
