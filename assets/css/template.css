@@ -28,7 +28,7 @@ html.modal-w {
 
 body {
     background-color: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Open Sans", "Raleway", Arial, serif;
     line-height: 1.8;
     font-weight: 400;
     font-size: 13px;
@@ -277,7 +277,7 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: 'Princess Sofia', cursive;
+    font-family: "Montserrat", Arial, serif;
     line-height: 1.4;
     font-weight: 700;
     color: #202020;
@@ -285,7 +285,6 @@ h6,
 
 h1,
 .h1 {
-    font-family: 'Qwigley', cursive;
     letter-spacing: 8px;
     font-size: 32px;
 }
