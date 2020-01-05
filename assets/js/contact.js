@@ -17,10 +17,9 @@
 				var submit          = $('#contact-form submit');
 				var ajaxResponse    = $('#contact-response');
 
-				var name            = $('#contact-form [name="name"]').val();
-				var email           = $('#contact-form [name="email"]').val();
-				var phone           = $('#contact-form [name="phone"]').val();
-				var message         = $('#contact-form [name="message"]').val();
+				var name            = $("input#cname").val();
+				var email           = $("input#cemail").val();
+				var message         = $("textarea#cmessage").val();
 
 				$.ajax({
 					type: 'POST',
@@ -29,7 +28,6 @@
 					data: {
 						name: name,
 						email: email,
-						phone: phone,
 						message: message,
 					},
 					cache: false,

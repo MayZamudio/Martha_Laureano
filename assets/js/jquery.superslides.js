@@ -252,7 +252,7 @@ var fx = {
       complete();
     });
   },
-/*  fade: function(orientation, complete) {
+  fade: function(orientation, complete) {
     var that = this,
         $children = that.$container.children(),
         $outgoing = $children.eq(orientation.outgoing_slide),
@@ -298,66 +298,7 @@ var fx = {
       });
       complete();
     }
-  }*/
-
-  fade: function(orientation, complete) {
-    var that = this,
-            $children = that.$container.children(),
-            $outgoing = $children.eq(orientation.outgoing_slide),
-            $target = $children.eq(orientation.upcoming_slide);
-    // alert(orientation.upcoming_slide);
-    $target.css({
-      left: this.width,
-      opacity: 0,
-      display: 'block'
-    }).animate({
-          opacity: 1
-        },
-        that.options.animation_speed,
-        that.options.animation_easing
-    );
-    $outgoing.animate({
-        opacity: 0
-    });
-
-//    if (orientation.outgoing_slide >= 0) {
-    that.$control.animate({
-        opacity: 1,
-        zIndex: 2,
-        display: 'block'
-    },
-//    $outgoing.animate({
-//        opacity: 0
-//      },
-    that.options.animation_speed,
-            that.options.animation_easing,
-            function() {
-                if (that.size() > 1) {
-                    that.$control.css({
-                        left: -that.width
-                    });
-                    $children.eq(orientation.upcoming_slide).css({
-                        zIndex: 2
-                    });
-
-                    if (orientation.outgoing_slide >= 0) {
-                        $children.eq(orientation.outgoing_slide).css({
-                            opacity: 1,
-                            display: 'none',
-                            zIndex: 0
-                        });
-                    }
-                }
-
-                complete();
-            });
-//    } else {
-//      $target.css({
-//        zIndex: 2
-//      });
-//       complete();
-//    }
-}
+  }
 };
 
 fx = $.extend(fx, $.fn.superslides.fx);
